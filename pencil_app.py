@@ -52,9 +52,9 @@ else:
     st.image(final_sketch, use_column_width = True)
     #descagar imagen
     if st.button('Descargar su imagen'):
-        img_pil = Image.fromarray(final_sketch)
-        img_pil.save('imagen_final.jpeg')
-        cv2.imwrite('foto_pencil.jpg', img_pil)
+        #img_pil = Image.fromarray(final_sketch)
+        #img_pil.save('imagen_final.jpeg')
+        cv2.imwrite('foto_pencil.jpg', final_sketch)
         st.write('**Descarga completada**')
 
 
