@@ -54,6 +54,7 @@ else:
     if st.button('Descargar su imagen'):
         img_pil = Image.fromarray(final_sketch)
         img_pil.save('imagen_final.jpeg')
+        cv2.imwrite('foto_pencil.jpg', img_pil)
         st.write('**Descarga completada**')
 
 
