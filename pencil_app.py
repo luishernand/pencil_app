@@ -7,7 +7,7 @@ import cv2
 #divide spoll into to columns
 col2, col3 = st.beta_columns((2,2))
 #logo
-logo = Image.open("C:\\Users\\Lenovo\\Documents\\Luis\\logo2.jpg")
+logo = Image.open("logo2.jpg")
 col3.image(logo)
 
 #titulo
