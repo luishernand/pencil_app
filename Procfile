@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run nba_reference.py
+web: sh setup.sh && streamlit run pencil_app.py
