@@ -51,7 +51,7 @@ else:
     st.image(input_img, use_column_width = True)
     st.write('**Salida de Boceto de lápiz**')
     st.image(final_sketch, use_column_width = True)
-    st.write('**clic derecho para guardar la imagen**')
+    #st.write('**clic derecho para guardar la imagen**')
     #descagar imagen
     #if st.button('Descargar su imagen'):
         #img_pil = Image.fromarray(final_sketch)
