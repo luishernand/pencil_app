@@ -47,15 +47,17 @@ if file_image is None:
 else:
     input_img = Image.open(file_image)
     final_sketch = pencilsketch(np.array(input_img))
+    st.write('**Imagen de entrada**')
     st.image(input_img, use_column_width = True)
     st.write('**Salida de Boceto de lápiz**')
     st.image(final_sketch, use_column_width = True)
+    st.write('**clic derecho para guardar la imagen**')
     #descagar imagen
-    if st.button('Descargar su imagen'):
+    #if st.button('Descargar su imagen'):
         #img_pil = Image.fromarray(final_sketch)
         #img_pil.save('imagen_final.jpeg')
-        cv2.imwrite('foto_pencil.jpg', final_sketch)
-        st.write('**Descarga completada**')
+        #cv2.imwrite('foto_pencil.jpg', final_sketch)
+        #st.write('**Descarga completada**')
 
 
 
